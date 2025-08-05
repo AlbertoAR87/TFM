@@ -22,6 +22,7 @@ app = FastAPI(
 origins = [
     "http://localhost",
     "http://localhost:3000",
+    "https://tfm-wzzl.vercel.app",
 ]
 
 app.add_middleware(
