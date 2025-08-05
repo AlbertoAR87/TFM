@@ -1,0 +1,11 @@
+Date,Product_ID,Region,Sales,Marketing_Spend,Promotion,Holiday,Temperature,Customers
+2023-01-01,P001,East,150,20,No,No,10,50
+2023-01-01,P002,West,200,25,Yes,No,12,60
+2023-01-02,P001,East,160,22,No,No,11,55
+2023-01-02,P003,North,100,15,No,Yes,5,30
+2023-01-03,P001,East,170,23,Yes,No,13,65
+2023-01-03,P002,West,210,26,No,No,14,70
+2023-01-04,P004,South,80,10,No,No,20,25
+2023-01-04,P001,East,155,21,No,No,12,52
+2023-01-05,P002,West,205,24,Yes,No,15,68
+2023-01-05,P003,North,110,16,No,Yes,6,33
