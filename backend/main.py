@@ -7,8 +7,8 @@ import os
 import pandas as pd
 from jose import jwt, JWTError
 
-from . import auth, sql_models, schemas, chatbot
-from .database import SessionLocal, engine
+import auth, sql_models, schemas, chatbot
+from database import SessionLocal, engine
 
 sql_models.Base.metadata.create_all(bind=engine)
 
