@@ -5,7 +5,7 @@ from jose import JWTError, jwt
 from passlib.context import CryptContext
 from sqlalchemy.orm import Session
 
-from . import sql_models, schemas
+import sql_models, schemas
 
 from dotenv import load_dotenv
 import os
