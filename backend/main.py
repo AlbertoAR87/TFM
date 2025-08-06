@@ -27,6 +27,8 @@ origins = [
     "http://localhost",
     "http://localhost:3000",
     "https://tfm-wzzl.vercel.app",
+    "https://*.vercel.app",
+    "*"
 ]
 
 app.add_middleware(
