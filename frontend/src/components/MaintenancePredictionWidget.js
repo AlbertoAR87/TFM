@@ -35,7 +35,7 @@ const MaintenancePredictionWidget = () => {
       const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
 
       const response = await axios.post(
-        `${API_URL}/predict/maintenance',
+        `${API_URL}/predict/maintenance`,
         apiData,
         {
           headers: { Authorization: `Bearer ${token}` },

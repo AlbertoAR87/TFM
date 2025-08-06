@@ -55,7 +55,7 @@ const SalesPredictionWidget = () => {
       const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
 
       const response = await axios.post(
-        `${API_URL}/predict/sales',
+        `${API_URL}/predict/sales`,
         apiData,
         {
           headers: { Authorization: `Bearer ${token}` },

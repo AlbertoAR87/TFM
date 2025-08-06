@@ -34,7 +34,7 @@ const ChatbotWidget = () => {
       const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
 
       const response = await axios.post(
-        `${API_URL}/chat',
+        `${API_URL}/chat`,
         { prompt: currentPrompt },
         {
           headers: { Authorization: `Bearer ${token}` },

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Responsive, WidthProvider } from 'react-grid-layout';
 import jsPDF from 'jspdf';
@@ -21,6 +21,11 @@ const DashboardPage = () => {
     { i: 'chatbot', x: 0, y: 5, w: 12, h: 6, minW: 6, minH: 5 },
   ];
 
+  const handleLogout = useCallback(() => {
+    localStorage.removeItem('token');
+    navigate('/login');
+  }, [navigate]);
+
   useEffect(() => {
     const fetchUser = async () => {
       try {
@@ -37,12 +42,9 @@ const DashboardPage = () => {
       }
     };
     fetchUser();
-  }, []);
+  }, [handleLogout]);
 
-  const handleLogout = () => {
-    localStorage.removeItem('token');
-    navigate('/login');
-  };
+  
 
   const handleExportToPDF = () => {
     const input = dashboardRef.current;
